@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Annamritam Restaurant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdf6ec;
+    }
+    header {
+      background-color: #d35400;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      background-color: #f39c12;
+      padding: 10px;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+    }
+    .menu-item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px;
+      display: inline-block;
+      width: 250px;
+      vertical-align: top;
+      background-color: #fff;
+    }
+    .menu-item img {
+      width: 100%;
+      height: auto;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+      border: 1px solid #ccc;
+    }
+    .reviews {
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+    .review {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to Annamritam</h1>
+  <p>Authentic Indian Cuisine with a Modern Twist</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#reservation">Reservation</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+  </ul>
+</nav>
+
+<section id="menu">
+  <h2>Our Menu</h2>
+  <div class="menu-item">
+    <img src="veg-thali.jpg" alt="Veg Thali">
+    <h3>Veg Thali</h3>
+    <p>Dal, Matar Paneer, Roti, Rice, Pickle, Salad</p>
+    <p><strong>₹180</strong></p>
+  </div>
+  <div class="menu-item">
+    <img src="52446409.avif" alt="Shahi Paneer">
+    <h3>Shahi Paneer</h3>
+    <p>Rich creamy paneer curry</p>
+    <p><strong>₹180</strong></p>
+  </div>
+  <div class="menu-item">
+    <img src="veg-biryani-instant-pot.jpg" alt="Veg Biryani ">
+    <h3>Veg Biryani</h3>
+    <p>Tasty Veg Biryani</p>
+    <p><strong>₹190</strong></p>
+  </div>
+  <div class="menu-item">
+    <img src="dal-fry.jpg" alt="dal fry">
+    <h3>Dal Fry</h3>
+    <p>Dal Fry</p>
+    <p><strong>120</strong></p>
+  </div>
+  <div class="menu-item">
+    <img src="download.jpeg" alt="Pani Puri">
+    <h3>Pani Puri</h3>
+    <p>Tasty Pani Puri</p>
+    <p><strong>₹60</strong></p>
+  </div>
+  <div class="menu-item">
+    <img src="download (1).jpeg" alt="Dosa">
+    <h3>Dosa</h3>
+    <p>Dosa</p>
+    <p><strong>₹80</strong></p>
+  </div>
+    <div class="menu-item">
+    <img src="idili.jpeg" alt="idli">
+    <h3>Idli</h3>
+    <p>Idli</p>
+    <p><strong>₹20</strong></p>
+  </div>
+    <div class="menu-item">
+    <img src="pizza.jpeg" alt="Pizza">
+    <h3>Pizza</h3>
+    <p>Pizza</p>
+    <p><strong>₹100</strong></p>
+  </div>
+    <div class="menu-item">
+    <img src="samsoa.jpeg" alt="samsoa">
+    <h3>samsoa</h3>
+    <p>samsoa</p>
+    <p><strong>₹20</strong></p>
+  </div>
+    <div class="menu-item">-
+    <img src="veg-thali.jpg" alt="Vada pav">
+    <h3>Vada pav</h3>
+    <p>Vada pav</p>
+    <p><strong>₹30</strong></p>
+  </div>
+   <div class="menu-item">
+    <img src="dount.jpeg" alt="Dount">
+    <h3>Dount</h3>
+    <p>Dount</p>
+    <p><strong>₹60</strong></p>
+  </div>
+  
+</section>
+
+<section id="reservation">
+  <h2>Reserve a Table</h2>
+  <form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="date">Date:</label><br>
+    <input type="date" id="date" name="date" required><br><br>
+
+    <label for="time">Time:</label><br>
+    <input type="time" id="time" name="time" required><br><br>
+
+    <label for="guests">Number of Guests:</label><br>
+    <input type="number" id="guests" name="guests" min="1" required><br><br>
+
+    <button type="submit">Book Now</button>
+  </form>
+</section>
+
+<section id="reviews" class="reviews">
+  <h2>Customer Reviews</h2>
+  <div class="review">
+    <strong>Priya Sharma</strong>
+    <p>“Amazing food and cozy ambiance. Loved the Veg Thali!”</p>
+  </div>
+  <div class="review">
+    <strong>Rajesh Verma</strong>
+    <p>“The Shahi Paneer was delicious. Will visit again!”</p>
+  </div>
+  
+</section>
+
+<footer style="text-align:center; padding:20px; background-color:#d35400; color:white;">
+  &copy; 2025 Annamritam Restaurant | Modinagar
+</footer>
+
+</body>
+</html>
